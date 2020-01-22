@@ -2,6 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Employee from "./pages/Employee";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Container from "./components/Container";
 
 
 
@@ -10,10 +13,10 @@ function App() {
       <Router>
         <div>
           <Navbar />
-          <Wrapper>
+          <Container>
             <Route exact path="/" component={Home} />
             <Route exact path="/employee" component={Employee} />
-          </Wrapper>
+          </Container>
           <Footer />
         </div>
       </Router>

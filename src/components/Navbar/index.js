@@ -1,47 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import logo from "./logo.png"; 
 
 function Navbar() {
-    return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" to="/">
-          Pupster
-        </Link>
-        <div>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link
-                to="/"
-                className={
-                  window.location.pathname === "/" || window.location.pathname === "/about"
-                    ? "nav-link active"
-                    : "nav-link"
-                }
-              >
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/discover"
-                className={window.location.pathname === "/discover" ? "nav-link active" : "nav-link"}
-              >
-                Discover
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/search"
-                className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
-              >
-                Search
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    );
-  }
+  return (
+    <nav className="navbar navbar-expand-sm navbar-light bg-white">
+        <img src={logo} alt="logo" className="app-logo"/>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="#">Employee Directory <span className="sr-only">(current)</span></a>
+            {/* <Link></Link> */}
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Employee</a>
+            {/* <Link></Link> */}
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
 
 export default Navbar;

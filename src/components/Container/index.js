@@ -1,8 +1,9 @@
 import React from "react";
 
-function Container() {
+function Container(props) {
   return (
     <div className="container-fluid">
+      {props.children}
     </div>
   );
 }

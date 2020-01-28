@@ -13,12 +13,10 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Employee Directory <span className="sr-only">(current)</span></a>
-            {/* <Link></Link> */}
+            <Link className="nav-link" to="/"> Employee Directory<span className="sr-only">(current)</span></Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Employee</a>
-            {/* <Link></Link> */}
+            <Link className="nav-link" to="/employee">Employee</Link>
           </li>
         </ul>
       </div>

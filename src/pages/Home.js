@@ -1,10 +1,8 @@
 import React from "react";
 
-function Home () {
+function Home() {
     return (
-        <div className="employee">
-
-        </div>
+        <h1>thi is home page</h1>
     )
 }
 

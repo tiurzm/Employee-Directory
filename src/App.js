@@ -1,24 +1,23 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Employee from "./pages/Employee";
-import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Container from "./components/Container";
 
 function App() {
     return (
-      <Router>
+        // <Router>
         <div>
-        <Navbar />
-        <Container>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/employee" component={Employee} />
-          {/* <Footer /> */}
-        </Container>
+            <Header />
+            <Container>
+                <Home />
+                {/* <Route exact path="/" component={Home} /> */}
+                {/* <Route exact path="/employee" component={Employee} /> */}
+                {/* <Footer /> */}
+            </Container>
         </div>
-      </Router>
+        // </Router>
     );
-  }
-  
-  export default App;
+}
+
+export default App;

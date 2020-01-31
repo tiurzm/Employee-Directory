@@ -1,6 +1,15 @@
 import React from "react";
 
 function Table(props) {
+    console.log(props);
+    // function for name's array(it returns only first and last name)
+    function toName(name) {
+        return `${name.first} ${name.last}`;
+    }
+    // function for id's array(it returns only the value of SSN)
+    function forKey(id) {
+        return `${id.value}`
+    }
     return (
         // <table className="table table-striped">
         //     <thead>
@@ -161,13 +170,18 @@ function Table(props) {
         //     </tbody>
         // </table>
         <>
-        {/* <ul className="list-group search-results">
-            {props.results.map(result => (
-                <li key={result} className="list-group-item">
-                    <img alt="Dog" src={result} className="img-fluid" />
-                </li>
+        <ul className="list-group employee">
+            {props.employees.map(employee => (
+<li className="list-group-item" key={forKey(employee.id)}>{toName(employee.name)} {employee.phone} {employee.email}</li>
             ))}
+            {/* employee is just a name for the element, you can call it whatever you want */}
+        </ul>
+        {/* <ul className="list-group employee">
+            {props.employees.map(function(employee) {
+                return (<li className="list-group-item">{toName(employee.name)}</li>)
+            })}
         </ul> */}
+        
         </>
     );
 }

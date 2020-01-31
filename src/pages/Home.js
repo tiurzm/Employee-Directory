@@ -3,14 +3,12 @@ import API from "../utils/API";
 import Table from "../components/Table";
 import SearchForm from "../components/SearchForm";
 // import Alert from "../components/Alert";
-// import Moment from 'moment';
-
 
 class Home extends Component {
     state = {
       employees: [
         {
-          image: "",
+          picture: "",
           name: "",
           phone: "",
           email: "",

@@ -11,11 +11,9 @@ function SearchForm(props) {
                     value={props.search} 
                     onChange={props.handleInputChange}
                 />
-                {/* <button type="submit" className="btn float-right d-inline"> Search</button> */}
             </div>
         </form>
     );
-    // sorting and filtering
 }
 
 export default SearchForm;

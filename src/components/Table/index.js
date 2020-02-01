@@ -3,7 +3,7 @@ import Moment from 'moment';
 
 
 function Table(props) {
-    console.log(props);
+    // console.log(props);
     // function for name's array (it returns only first and last name)
     function toName(name) {
         return `${name.first} ${name.last}`;
@@ -16,9 +16,11 @@ function Table(props) {
     function toImage(picture) {
         return `${picture.large}`
     }
-
     // function for dob's array
-    function toAge (dob) {
+    // function toAge (dob) {
+    //     return `${dob.age}`
+    // }
+    function toDob (dob) {
         const birth = `${dob.date}`;
         const birthday = Moment(birth).format('DD-MM-YYYY');
         return birthday
@@ -41,7 +43,7 @@ function Table(props) {
                         <td>{toName(employee.name)}</td>
                         <td>{employee.phone}</td>
                         <td>{employee.email}</td>
-                        <td>{toAge(employee.dob)}</td>
+                        <td>{toDob(employee.dob)}</td>
                     </tr>
                 ))}
                 {/* employee is just a name for the element, you can call it whatever you want */}

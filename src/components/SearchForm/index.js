@@ -6,23 +6,16 @@ function SearchForm(props) {
             <div className="form-group">
                 <input type="text" className="form-control w-75 d-inline" 
                     name= "search"
-                    list="searchs"
-                    id="search"
-                    // value={props.search} 
-                    // onChange={props.handleInputChange}
+                    list="search"
+                    autoComplete="off"
+                    value={props.search} 
+                    onChange={props.handleInputChange}
                 />
-                {/* <datalist id="searchs">
-                    {props.searchs.map(search => (
-                        <option value={search} key={search} />
-                    ))}
-                </datalist> */}
-                <button type="submit" className="btn float-right d-inline" 
-                    // onClick={props.handleFormSubmit}
-                > Search
-                </button>
+                {/* <button type="submit" className="btn float-right d-inline"> Search</button> */}
             </div>
         </form>
     );
+    // sorting and filtering
 }
 
 export default SearchForm;

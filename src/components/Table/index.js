@@ -17,9 +17,6 @@ function Table(props) {
         return `${picture.large}`
     }
     // function for dob's array
-    // function toAge (dob) {
-    //     return `${dob.age}`
-    // }
     function toDob (dob) {
         const birth = `${dob.date}`;
         const birthday = Moment(birth).format('DD-MM-YYYY');
@@ -30,7 +27,15 @@ function Table(props) {
             <thead>
                 <tr>
                     <th scope="col">Image</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">
+                        <i className="fas fa-arrow-down" 
+                            onClick={props.handleSortReverse}>
+                        </i> 
+                            Name 
+                        <i class="fas fa-arrow-up" 
+                            onClick={props.handleSort}>    
+                        </i>
+                    </th>
                     <th scope="col">Phone</th>
                     <th scope="col">Email</th>
                     <th scope="col">DOB</th>

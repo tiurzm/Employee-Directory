@@ -28,13 +28,10 @@ function Table(props) {
                 <tr>
                     <th scope="col">Image</th>
                     <th scope="col">
-                        <i className="fas fa-arrow-down" 
-                            onClick={props.handleSortReverse}>
-                        </i> 
-                            Name 
-                        <i class="fas fa-arrow-up" 
+                        <span onClick={props.handleSortReverse}>
+                        - </span> Name <span 
                             onClick={props.handleSort}>    
-                        </i>
+                        + </span>
                     </th>
                     <th scope="col">Phone</th>
                     <th scope="col">Email</th>

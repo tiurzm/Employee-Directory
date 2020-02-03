@@ -29,9 +29,9 @@ function Table(props) {
                     <th scope="col">Image</th>
                     <th scope="col">
                         <span onClick={props.handleSortReverse}>
-                        - </span> Name <span 
+                        &#8595; </span> Name <span 
                             onClick={props.handleSort}>    
-                        + </span>
+                        &#8593; </span>
                     </th>
                     <th scope="col">Phone</th>
                     <th scope="col">Email</th>

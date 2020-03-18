@@ -1,6 +1,6 @@
 {
   "homepage": "https://tiurzm.github.io/Employee-Directory/",
-  "name": "practiceapp",
+  "name": "employee",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

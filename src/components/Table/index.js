@@ -23,8 +23,8 @@ function Table(props) {
         return birthday
     }
     return (
-        <div className="table">
-        <table className="table-responsive table-striped">
+        <div className="table-responsive mx-auto">
+        <table className="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">Image</th>

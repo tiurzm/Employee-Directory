@@ -23,7 +23,8 @@ function Table(props) {
         return birthday
     }
     return (
-        <table className="table table-striped">
+        <div className="table">
+        <table className="table-responsive table-striped">
             <thead>
                 <tr>
                     <th scope="col">Image</th>
@@ -51,6 +52,7 @@ function Table(props) {
                 {/* employee is just a name for the element, you can call it whatever you want */}
             </tbody>
         </table>
+        </div>
     );
 }
 
